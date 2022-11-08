@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 class ListaSpesa : AppCompatActivity() {
 
     private lateinit var listaSpesaRecyclerView : RecyclerView
-    private lateinit var listAdapter : ListAdapter
-    private lateinit var spesaList : ArrayList<>
+    //private lateinit var listAdapter : ListAdapter
+    private lateinit var spesaList : ArrayList<Menu>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

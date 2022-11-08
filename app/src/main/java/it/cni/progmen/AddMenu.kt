@@ -36,7 +36,7 @@ class AddMenu : AppCompatActivity() {
         piattoList = ArrayList()
         piattoAdapter = PiattoAdapter(this,piattoList)
 
-        piattoRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        piattoRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         piattoRecyclerView.adapter = piattoAdapter
 
         btn_menuVel.setOnClickListener {

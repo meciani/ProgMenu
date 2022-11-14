@@ -1,5 +1,7 @@
 package it.cni.progmen
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -56,57 +58,62 @@ class AddMenu : AppCompatActivity() {
 
 
 
-
+       btn_CreaMenu.setOnClickListener {
+           val intent = Intent(this,CreaMenu::class.java)
+            startActivity(intent)
+       }
 
 
     }
 
 
+
     private fun preparazioneMenuVeloce(){
 
         var piatto = Menu("Marco","menuVeloce","currentdata"
-            ,"pasta in bianco","pasta","pasta")
+            ,"pasta in bianco","Hamburger","Biscotti","pasta","carne","Dolce","pasta,HAmburger,Biscotti")
         piattoList.add(piatto)
 
-        piatto = Menu("Marco","menuVeloce","currentdata"
+       /* piatto = Menu("Marco","menuVeloce","currentdata"
             ,"Hamburger","carne","Hamburger")
         piattoList.add(piatto)
 
         piatto = Menu("Marco","menuVeloce","currentdata"
             ,"Biscotti","Dolce","Biscotti")
-                piattoList.add(piatto)
+        piattoList.add(piatto)*/
 
     }
 
     private fun preparazioneMenuBase(){
 
         var piatto = Menu("Marco","menuBase","currentdata"
-            ,"pasta con le vongole","pasta con pesce","pasta,vongole")
+            ,"pasta con le vongole","Costata","Torta","pasta con pesce","carne","Carne","pasta,vongole")
         piattoList.add(piatto)
 
-        piatto = Menu("Marco","menuBase","currentdata"
+       /* piatto = Menu("Marco","menuBase","currentdata"
             ,"Costata","carne","Carne")
         piattoList.add(piatto)
 
         piatto = Menu("Marco","menuBase","currentdata"
             ,"Torta","Dolce","Torta supermercato")
-        piattoList.add(piatto)
+        piattoList.add(piatto)*/
 
     }
 
     private fun preparazioneMenuAvanzato(){
 
         var piatto = Menu("Marco","menuAvanzato","currentdata"
-            ,"Risotto ai Porcini","Risotto ai funghi","riso,porcini")
+            ,"Risotto ai Porcini","Aragosta","Tiramisu","Risotto ai funghi","pesce","Dolce",
+            "riso,porcini,Aragosta,Savoiardi,caffe,Mascarpone,cacao")
         piattoList.add(piatto)
 
-        piatto = Menu("Marco","menuAvanzato","currentdata"
+       /* piatto = Menu("Marco","menuAvanzato","currentdata"
             ,"Aragosta","pesce","Aragosta")
         piattoList.add(piatto)
 
         piatto = Menu("Marco","menuAvanzato","currentdata"
             ,"Tiramisu","Dolce","Savoiardi,caffe,Mascarpone,cacao")
-        piattoList.add(piatto)
+        piattoList.add(piatto)*/
     }
 
 

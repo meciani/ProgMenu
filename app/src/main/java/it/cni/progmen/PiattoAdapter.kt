@@ -19,7 +19,11 @@ class PiattoAdapter (val context : Context, val piattoList: ArrayList<Menu>):
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         var currentPiatto = piattoList[position]
         holder.txtTitolo.text = currentPiatto.piatto
+        holder.txtTitolo2.text = currentPiatto.piatto2
+        holder.txtTitolo3.text = currentPiatto.piatto3
         holder.txtTipo.text = currentPiatto.tipo
+        holder.txtTipo2.text = currentPiatto.tipo2
+        holder.txtTipo3.text = currentPiatto.tipo3
 
 
     }
@@ -32,7 +36,12 @@ class PiattoAdapter (val context : Context, val piattoList: ArrayList<Menu>):
     class MenuViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         val txtTitolo = itemView.findViewById<TextView>(R.id.txt_piatto_titolo)
+        val txtTitolo2 = itemView.findViewById<TextView>(R.id.txt_piatto2_titolo)
+        val txtTitolo3 = itemView.findViewById<TextView>(R.id.txt_piatto3_titolo)
         val txtTipo = itemView.findViewById<TextView>(R.id.txt_piatto_tipo)
+        val txtTipo2 = itemView.findViewById<TextView>(R.id.txt_piatto2_tipo)
+        val txtTipo3 = itemView.findViewById<TextView>(R.id.txt_piatto3_tipo)
+
 
 
 

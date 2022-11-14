@@ -5,8 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:layout_width="150dp"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:id = "@+id/card_view"
     app:cardUseCompatPadding="true"
     app:cardCornerRadius="15dp"
@@ -27,7 +28,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="0dp"
             android:text="piatto"
             android:textStyle="bold|normal"
             android:textSize="20dp"
@@ -38,9 +39,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="tipo"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_piatto2_titolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="piatto"
+            android:textSize="20dp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/txt_piatto2_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="tipo"
             android:textSize="20dp"
             />
+ <TextView
+            android:id="@+id/txt_piatto3_titolo"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="piatto"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_piatto3_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="tipo"
+            android:textSize="20dp"
+            />
+
 
     </LinearLayout>
 
